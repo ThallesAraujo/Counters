@@ -28,10 +28,19 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupList()
         mainList.delegate = self
         mainList.dataSource = self
         queryHealthKit()
         self.title = "Counters"
+    }
+    
+    func setupList(){
+        if #available(iOS 13.0, *) {
+            self.mainList = .init(frame: CGRect.zero, style: .insetGrouped)
+        }
+        
+        self.mainList.register(RegularDataCell.self, forCellReuseIdentifier: regularCellDataIdentifier)
     }
     
     func queryHealthKit(){
@@ -60,21 +69,23 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = UITableViewCell()
-        cell.textLabel?.text = getData(indexPath.row)
-        return cell
-    }
-
-    
-    internal func getData(_ index: Int) -> String{
-        
         if !healthData.isEmpty{
-            let section = mainTableViewSections[index]
-            return "\(section.title) \(healthData[index]) \(section.unit)"
-        }else{
-            return "Sem dados"
+            if let cell = tableView.dequeueReusableCell(withIdentifier: regularCellDataIdentifier) as? RegularDataCell, indexPath.item < healthData.count{
+                let section = mainTableViewSections[indexPath.item]
+                
+                cell.title.text = section.title
+                cell.data.text = "\(healthData[indexPath.item]) \(section.unit)"
+                print("IndexPath item \(indexPath.item) | cell data: \(healthData[indexPath.item])")
+                return cell
+            }
         }
+        
+        return UITableViewCell()
     }
     
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 60
+    }
 }
 

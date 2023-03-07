@@ -34,9 +34,7 @@ class HealthKitQueryManager{
                 print("failure")
             }
             
-            if let error = error { print(error)
-                
-            }
+            if let error = error { print(error) }
         }
         
     }
@@ -51,21 +49,18 @@ class HealthKitQueryManager{
     func getExerciseTime(completion: @escaping ((_ exerciseTime: Double) -> Void)) {
         
         let exerciseSampleType = HKSampleType.quantityType(forIdentifier: HKQuantityTypeIdentifier.appleExerciseTime)!
-        
         self.query(unit: HKUnit.hour(), dataType: exerciseSampleType, completion: completion)
     }
     
     func getStandHour(completion: @escaping ((_ standHour: Double) -> Void)) {
         
         let standHourSampleType = HKSampleType.categoryType(forIdentifier: HKCategoryTypeIdentifier.appleStandHour)!
-        
         self.query(unit: HKUnit.hour(), dataType: standHourSampleType, queryType: .category, completion: completion)
     }
     
     func getStepCount(completion: @escaping ((_ stepCount: Double) -> Void)) {
         
         let stepCountSampleType = HKSampleType.quantityType(forIdentifier: HKQuantityTypeIdentifier.stepCount)!
-        
         self.query(unit: HKUnit.count(), dataType: stepCountSampleType, completion: completion)
     }
     
