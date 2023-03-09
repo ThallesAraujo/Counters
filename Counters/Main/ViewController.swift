@@ -20,7 +20,12 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     //MARK: - Data
     
-    var healthData: [String] = []{
+    var healthData: [String: String] = [
+        "calories": "0",
+        "stepCount": "0",
+        "exerciseTime": "0",
+        "standHours": "0"
+    ]{
         didSet {
             self.mainList.reloadData()
         }
@@ -28,6 +33,7 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        queryManager.getCaloriesType()
         setupList()
         mainList.delegate = self
         mainList.dataSource = self
@@ -46,16 +52,22 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
     func queryHealthKit(){
         
         let queries = [
-            self.queryManager.getActiveEnergy,
-            self.queryManager.getExerciseTime,
-            self.queryManager.getStandHour,
-            self.queryManager.getStepCount
+            (self.queryManager.getActiveEnergy, DataCellType.calories),
+            (self.queryManager.getExerciseTime, DataCellType.exerciseTime),
+            (self.queryManager.getStandHour, DataCellType.standHours),
+            (self.queryManager.getStepCount, DataCellType.stepCount)
         ]
         
-        for query in queries{
+        for (query, dataType) in queries{
             query {data in
-                self.healthData.append("\(data)")
-                print("healthData: \(self.healthData)")
+                
+                print("Data: \(dataType): \(data)")
+                
+                if [DataCellType.exerciseTime].contains(dataType){
+                    self.healthData[dataType.rawValue] = "\(data.asString(style: .abbreviated))"
+                }else{
+                    self.healthData[dataType.rawValue] = "\(Int(data))"
+                }
             }
         }
         
@@ -74,8 +86,7 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
                 let section = mainTableViewSections[indexPath.item]
                 
                 cell.title.text = section.title
-                cell.data.text = "\(healthData[indexPath.item]) \(section.unit)"
-                print("IndexPath item \(indexPath.item) | cell data: \(healthData[indexPath.item])")
+                cell.data.text = "\(healthData[section.dataType.rawValue].orEmpty)\(section.unit)"
                 return cell
             }
         }
@@ -85,7 +96,7 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 60
+        return 80
     }
 }
 

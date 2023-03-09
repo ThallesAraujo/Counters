@@ -10,6 +10,15 @@ import UIKit
 
 let regularCellDataIdentifier = "regularCellData"
 
+enum DataCellType: String{
+    
+    case calories = "calories"
+    case standHours = "standHours"
+    case exerciseTime = "exerciseTime"
+    case stepCount = "stepCount"
+    
+}
+
 class RegularDataCell: UITableViewCell{
     
     override var reuseIdentifier: String { return regularCellDataIdentifier }
@@ -24,12 +33,13 @@ class RegularDataCell: UITableViewCell{
     override func draw(_ rect: CGRect) {
         super.draw(rect)
         
-        let stack = stacked(axis: .vertical,
-                            stacked(axis: .horizontal, icon, title),
-                            stacked(axis: .horizontal, data)
-        )
+        let stack = vStack(
+                        hStack(icon, title),
+                        data
+                    )
+        
         addSubview(stack)
-        stack.fillParent(withPadding: 8)
+        stack.fillParent(withPadding: 16)
         
         self.title.textColor = dataColor
         self.icon.tintColor = dataColor
