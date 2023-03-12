@@ -33,10 +33,13 @@ class RegularDataCell: UITableViewCell{
     override func draw(_ rect: CGRect) {
         super.draw(rect)
         
-        let stack = vStack(
-                        hStack(icon, title),
-                        data
-                    )
+        let stack = VStack(padding: 0){
+            HStack(padding: 0){
+                icon
+                title
+            }
+            data
+        }
         
         addSubview(stack)
         stack.fillParent(withPadding: 16)
