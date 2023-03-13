@@ -28,7 +28,7 @@ class RegularDataCell: UITableViewCell{
     
     var icon: UIImageView = .init()
     
-    var dataColor: UIColor = .init(named: "defaultDataColor") ?? .systemBlue
+    var dataColor: UIColor = .init(named: "defaultDataColor").orDefault
     
     override func draw(_ rect: CGRect) {
         super.draw(rect)
@@ -36,7 +36,9 @@ class RegularDataCell: UITableViewCell{
         let stack = VStack(padding: 0){
             HStack(padding: 0){
                 icon
-                title
+                HStack(horizontalPadding: 4){
+                    title
+                }
             }
             data
         }
@@ -46,6 +48,8 @@ class RegularDataCell: UITableViewCell{
         
         self.title.textColor = dataColor
         self.icon.tintColor = dataColor
+        
+        self.layoutIfNeeded()
         
         
     }

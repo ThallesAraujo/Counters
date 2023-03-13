@@ -19,6 +19,13 @@ extension UIView{
         self.superview?.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "V:|-\(padding)-[thisView]-\(padding)-|", metrics: nil, views: ["thisView" : self]))
     }
     
+    func horizontalPadding(_ padding: Int = 8){
+        self.superview?.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "H:|-\(padding)-[thisView]-\(padding)-|", metrics: nil, views: ["thisView" : self]))
+    }
+    
+    func verticalPadding(_ padding: Int = 8){
+        self.superview?.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "V:|-\(padding)-[thisView]-\(padding)-|", metrics: nil, views: ["thisView" : self]))
+    }
     
     func vStack(_ views: UIView...) -> UIView{
         return stacked(axis: .vertical, views)

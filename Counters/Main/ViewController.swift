@@ -22,9 +22,9 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     var healthData: [String: String] = [
         "calories": "0",
-        "stepCount": "0",
         "exerciseTime": "0",
-        "standHours": "0"
+        "standHours": "0",
+        "stepCount": "0"
     ]{
         didSet {
             self.mainList.reloadData()
@@ -39,6 +39,12 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
         mainList.dataSource = self
         queryHealthKit()
         self.title = "Counters"
+    }
+    
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        //TODO: Por hora, corrige cores em células erradas. Porém não é a melhor solução
+        self.mainList.reloadData()
     }
     
     func setupList(){
@@ -87,6 +93,12 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
                 
                 cell.title.text = section.title
                 cell.data.text = "\(healthData[section.dataType.rawValue].orEmpty)\(section.unit)"
+                if #available(iOS 13.0, *) {
+                    cell.icon.image = UIImage(systemName: section.iconName)
+                }else{
+                    //TODO: Fallback para versões antigas
+                }
+                cell.dataColor = UIColor(named: section.colorName).orDefault
                 return cell
             }
         }

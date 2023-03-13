@@ -8,9 +8,6 @@
 import Foundation
 import UIKit
 
-typealias StackedViews = [UIView]
-
-
 class Stack: UIView{
     
     var stackedViews: [UIView] = []
@@ -21,6 +18,17 @@ class Stack: UIView{
     
     var padding: Int = 8
     
+    var horizontalPadding: Int = 0
+    
+    var verticalPadding: Int = 0
+    
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+    }
     
     override func draw(_ rect: CGRect) {
         super.draw(rect)
@@ -32,7 +40,13 @@ class Stack: UIView{
         mainView.translatesAutoresizingMaskIntoConstraints = false
         mainView.alignment = .leading
         self.addSubview(mainView)
-        mainView.fillParent(withPadding: padding)
+        if self.horizontalPadding > 0{
+            mainView.horizontalPadding(horizontalPadding)
+        }else if verticalPadding > 0{
+            mainView.verticalPadding(verticalPadding)
+        }else{
+            mainView.fillParent(withPadding: padding)
+        }
         self.translatesAutoresizingMaskIntoConstraints = false
     }
     
@@ -40,14 +54,17 @@ class Stack: UIView{
 
 class VStack: Stack{
     
-    override init(frame: CGRect) {
-        super.init(frame: frame)
-    }
-    
-    init(padding: Int = 8, @Stacker _ viewClosure: () -> StackedViews){
+    init(padding: Int = 8, @ViewComposed _ viewClosure: () -> [UIView]){
         super.init(frame: CGRect.init(x: 0, y: 0, width: 50, height: 100))
         self.stackedViews = viewClosure()
         self.padding = padding
+    }
+    
+    init(verticalPadding: Int, @ViewComposed _ viewClosure: () -> [UIView]){
+        super.init(frame: CGRect.init(x: 0, y: 0, width: 100, height: 50))
+        self.stackedViews = viewClosure()
+        self.axis = .horizontal
+        self.verticalPadding = padding
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -59,17 +76,19 @@ class VStack: Stack{
 
 class HStack: Stack{
     
-    override init(frame: CGRect) {
-        super.init(frame: frame)
-    }
-    
-    init(padding: Int = 8, @Stacker _ viewClosure: () -> StackedViews){
+    init(padding: Int = 8, @ViewComposed _ viewClosure: () -> [UIView]){
         super.init(frame: CGRect.init(x: 0, y: 0, width: 100, height: 50))
         self.stackedViews = viewClosure()
         self.axis = .horizontal
         self.padding = padding
     }
     
+    init(horizontalPadding: Int, @ViewComposed _ viewClosure: () -> [UIView]){
+        super.init(frame: CGRect.init(x: 0, y: 0, width: 100, height: 50))
+        self.stackedViews = viewClosure()
+        self.axis = .horizontal
+        self.horizontalPadding = padding
+    }
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
@@ -77,7 +96,7 @@ class HStack: Stack{
     
 }
 
-@resultBuilder public struct Stacker{
+@resultBuilder public struct ViewComposed{
     
     public static func buildBlock(_ components: UIView...) -> [UIView] {
         return components

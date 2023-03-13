@@ -18,3 +18,18 @@ extension Optional where Wrapped == String {
         }
     }
 }
+
+
+extension Optional where Wrapped == UIColor{
+    
+    var orDefault: UIColor{
+        switch self{
+        case .some(let value):
+            return value
+        case .none:
+            return .systemBlue
+        }
+        
+    }
+    
+}
