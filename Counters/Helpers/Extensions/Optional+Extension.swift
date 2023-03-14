@@ -33,3 +33,16 @@ extension Optional where Wrapped == UIColor{
     }
     
 }
+
+extension Optional where Wrapped == UIImage{
+    
+    var orEmpty: UIImage{
+        switch self {
+        case .none:
+            return UIImage()
+        case .some(let wrapped):
+            return wrapped
+        }
+    }
+    
+}

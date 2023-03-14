@@ -38,7 +38,6 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
         mainList.delegate = self
         mainList.dataSource = self
         queryHealthKit()
-        self.title = "Counters"
     }
     
     override func viewDidLayoutSubviews() {
