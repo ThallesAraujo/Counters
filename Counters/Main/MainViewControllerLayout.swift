@@ -12,7 +12,7 @@ extension MainViewController{
     override func viewWillLayoutSubviews() {
         self.mainList.translatesAutoresizingMaskIntoConstraints = false
         self.view.addSubview(mainList)
-        mainList.fillParent()
+        mainList.fillParent(withPadding: 0)
     }
     
 }

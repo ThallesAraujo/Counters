@@ -8,6 +8,8 @@
 import Foundation
 import UIKit
 
+//TODO: Monitorar estado da bateria https://stackoverflow.com/questions/27475506/check-battery-level-ios-swift
+
 class BatteriesViewController: UIViewController, UITableViewDelegate, UITableViewDataSource{
     
     var mainList: UITableView = .init()
@@ -35,7 +37,7 @@ class BatteriesViewController: UIViewController, UITableViewDelegate, UITableVie
         
         let cellContent = VStack{
             Label("\(UIDevice.current.name)")
-            Label("\(UIDevice.current.batteryLevel)%")
+            Label("\(UIDevice.current.batteryLevel.percent)%")
         }
         
         print("Device name: \(UIDevice.current.name)")

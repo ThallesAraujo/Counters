@@ -136,19 +136,20 @@ class HealthKitQueryManager{
             let query = HKActivitySummaryQuery(predicate: predicate) { query, results, error in
                 if results == nil {
                     print("There was an error running the query: \(error.debugDescription)")
-                }
+                }else{
                 
-                DispatchQueue.main.async {
-                    
-                    if queryType == .quantity{
-                        for activity in results!{
-                            let dt = activity.appleStandHours.doubleValue(for: unit)
-                            data = data + dt
-                        }
-                    }else{
-                        for activity in results as! [HKCategorySample]{
-                            let dt = Double(activity.value)
-                            data = data + dt
+                    DispatchQueue.main.async {
+                        
+                        if queryType == .quantity{
+                            for activity in results!{
+                                let dt = activity.appleStandHours.doubleValue(for: unit)
+                                data = data + dt
+                            }
+                        }else{
+                            for activity in results as! [HKCategorySample]{
+                                let dt = Double(activity.value)
+                                data = data + dt
+                            }
                         }
                     }
                     

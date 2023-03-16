@@ -64,7 +64,7 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
         ]
         
         for (query, dataType) in queries{
-            query {data in
+            query { data in
                 
                 print("Data: \(dataType): \(data)")
                 
@@ -92,11 +92,7 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
                 
                 cell.title.text = section.title
                 cell.data.text = "\(healthData[section.dataType.rawValue].orEmpty)\(section.unit)"
-                if #available(iOS 13.0, *) {
-                    cell.icon.image = UIImage(systemName: section.iconName)
-                }else{
-                    //TODO: Fallback para versões antigas
-                }
+                cell.icon.image = UIImage(named: section.iconName)
                 cell.dataColor = UIColor(named: section.colorName).orDefault
                 return cell
             }

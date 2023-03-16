@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 53;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -21,6 +21,7 @@
 		6FB43FF029C0A3F5001FFA0E /* BatteriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FB43FEF29C0A3F5001FFA0E /* BatteriesViewController.swift */; };
 		6FB43FF329C0A575001FFA0E /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FB43FF229C0A575001FFA0E /* MainTabBarController.swift */; };
 		6FB43FF529C0AC27001FFA0E /* BatteriesViewControllerLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FB43FF429C0AC27001FFA0E /* BatteriesViewControllerLayout.swift */; };
+		6FB43FF729C0BAF7001FFA0E /* Float+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FB43FF629C0BAF7001FFA0E /* Float+Extension.swift */; };
 		6FC1BCE629BA24CB00021009 /* Double+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FC1BCE529BA24CB00021009 /* Double+Extension.swift */; };
 		6FD5BB7629B7445E00094F09 /* HealthKitQueryManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD5BB7529B7445E00094F09 /* HealthKitQueryManager.swift */; };
 		6FD5BB7829B74A7E00094F09 /* MainTableViewComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD5BB7729B74A7E00094F09 /* MainTableViewComponents.swift */; };
@@ -45,6 +46,7 @@
 		6FB43FEF29C0A3F5001FFA0E /* BatteriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatteriesViewController.swift; sourceTree = "<group>"; };
 		6FB43FF229C0A575001FFA0E /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		6FB43FF429C0AC27001FFA0E /* BatteriesViewControllerLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatteriesViewControllerLayout.swift; sourceTree = "<group>"; };
+		6FB43FF629C0BAF7001FFA0E /* Float+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Float+Extension.swift"; sourceTree = "<group>"; };
 		6FC1BCE529BA24CB00021009 /* Double+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Extension.swift"; sourceTree = "<group>"; };
 		6FD5BB7529B7445E00094F09 /* HealthKitQueryManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthKitQueryManager.swift; sourceTree = "<group>"; };
 		6FD5BB7729B74A7E00094F09 /* MainTableViewComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewComponents.swift; sourceTree = "<group>"; };
@@ -149,6 +151,7 @@
 				6F853DD129B4EE37001EF875 /* Optional+Extension.swift */,
 				6F853DD529B513B9001EF875 /* UIView+Extension.swift */,
 				6FC1BCE529BA24CB00021009 /* Double+Extension.swift */,
+				6FB43FF629C0BAF7001FFA0E /* Float+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -197,7 +200,7 @@
 				};
 			};
 			buildConfigurationList = 6F7D4E8829B3C8DA00A96803 /* Build configuration list for PBXProject "Counters" */;
-			compatibilityVersion = "Xcode 14.0";
+			compatibilityVersion = "Xcode 10.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -239,6 +242,7 @@
 				6FD5BB7629B7445E00094F09 /* HealthKitQueryManager.swift in Sources */,
 				6FB43FED29BF56E3001FFA0E /* Label.swift in Sources */,
 				6FC1BCE629BA24CB00021009 /* Double+Extension.swift in Sources */,
+				6FB43FF729C0BAF7001FFA0E /* Float+Extension.swift in Sources */,
 				6F853DD229B4EE37001EF875 /* Optional+Extension.swift in Sources */,
 				6FD5BB7829B74A7E00094F09 /* MainTableViewComponents.swift in Sources */,
 				6FD5BB7B29B778E700094F09 /* RegularDataCell.swift in Sources */,
