@@ -36,18 +36,12 @@ extension UIView{
     }
     
     private func stacked(axis: NSLayoutConstraint.Axis, _ views: [UIView]) -> UIView{
-        
         let stack = UIStackView.init(frame: CGRect.init(x: 0, y: 0, width: 50, height: 100))
         stack.translatesAutoresizingMaskIntoConstraints = false
         stack.axis = axis
         stack.alignment = .leading
-        
-        for view in views{
-            stack.addArrangedSubview(view)
-        }
-        
+        views.forEach({stack.addArrangedSubview($0)})
         stack.fillParent()
-        
         return stack
     }
     

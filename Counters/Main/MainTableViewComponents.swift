@@ -19,24 +19,24 @@ let mainTableViewSections = [
     MainTableViewSection(title: "Calorias ",
                          unit: "Kcal",
                          dataType: .calories,
-                         iconName: "figure.walk.circle",
+                         iconName: "calories.icon",
                         colorName: "movementColor"),
     
     MainTableViewSection(title: "Tempo de Exercício",
                          unit: "",
                          dataType: .exerciseTime,
-                         iconName: "clock",
+                         iconName: "exercise.time.icon",
                         colorName: "exerciseTimeColor"),
     
     MainTableViewSection(title: "Tempo em Pé ",
                          unit: "h",
                          dataType: .standHours,
-                         iconName: "figure.stand",
+                         iconName: "stand.hour.icon",
                         colorName: "standHoursColor"),
     
     MainTableViewSection(title: "Passos ",
                          unit: "",
                          dataType: .stepCount,
-                         iconName: "figure.walk",
+                         iconName: "step.count.icon",
                         colorName: "stepsColor")
 ]
