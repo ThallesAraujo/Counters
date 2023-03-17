@@ -46,3 +46,14 @@ extension Optional where Wrapped == UIImage{
     }
     
 }
+
+extension Optional where Wrapped == Int{
+    var orZero: Int{
+        switch self {
+        case .none:
+            return 0
+        case .some(let wrapped):
+            return wrapped
+        }
+    }
+}

@@ -8,12 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		6F0EB15729C3B20000297659 /* Float+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F0EB15629C3B20000297659 /* Float+Extension.swift */; };
+		6F0EB15929C3B3B700297659 /* UIDevice+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F0EB15829C3B3B700297659 /* UIDevice+Extension.swift */; };
+		6F2006E729C49B3200BDA8EA /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F2006E629C49B3200BDA8EA /* ListViewController.swift */; };
+		6F2006EB29C49E5100BDA8EA /* EventKitQueryManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F2006EA29C49E5100BDA8EA /* EventKitQueryManager.swift */; };
+		6F2006ED29C4A30800BDA8EA /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F2006EC29C4A30800BDA8EA /* CalendarViewController.swift */; };
+		6F2006F129C4A40100BDA8EA /* CalendarViewControllerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F2006F029C4A40100BDA8EA /* CalendarViewControllerModel.swift */; };
+		6F2006F329C4AEFA00BDA8EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6F2006F229C4AEFA00BDA8EA /* Assets.xcassets */; };
 		6F7D4E9129B3C8DA00A96803 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F7D4E9029B3C8DA00A96803 /* AppDelegate.swift */; };
 		6F7D4E9529B3C8DA00A96803 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F7D4E9429B3C8DA00A96803 /* MainViewController.swift */; };
-		6F7D4E9A29B3C8DB00A96803 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6F7D4E9929B3C8DB00A96803 /* Assets.xcassets */; };
 		6F7D4E9D29B3C8DB00A96803 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F7D4E9B29B3C8DB00A96803 /* LaunchScreen.storyboard */; };
 		6F853DD229B4EE37001EF875 /* Optional+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F853DD129B4EE37001EF875 /* Optional+Extension.swift */; };
-		6F853DD429B4EE93001EF875 /* MainViewControllerLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F853DD329B4EE93001EF875 /* MainViewControllerLayout.swift */; };
 		6F853DD629B513B9001EF875 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F853DD529B513B9001EF875 /* UIView+Extension.swift */; };
 		6FB43FE529BE8947001FFA0E /* Stacks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FB43FE429BE8947001FFA0E /* Stacks.swift */; };
 		6FB43FE729BF5195001FFA0E /* ComposedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FB43FE629BF5195001FFA0E /* ComposedView.swift */; };
@@ -21,7 +25,6 @@
 		6FB43FED29BF56E3001FFA0E /* Label.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FB43FEC29BF56E3001FFA0E /* Label.swift */; };
 		6FB43FF029C0A3F5001FFA0E /* BatteriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FB43FEF29C0A3F5001FFA0E /* BatteriesViewController.swift */; };
 		6FB43FF329C0A575001FFA0E /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FB43FF229C0A575001FFA0E /* MainTabBarController.swift */; };
-		6FB43FF529C0AC27001FFA0E /* BatteriesViewControllerLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FB43FF429C0AC27001FFA0E /* BatteriesViewControllerLayout.swift */; };
 		6FC1BCE629BA24CB00021009 /* Double+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FC1BCE529BA24CB00021009 /* Double+Extension.swift */; };
 		6FD5BB7629B7445E00094F09 /* HealthKitQueryManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD5BB7529B7445E00094F09 /* HealthKitQueryManager.swift */; };
 		6FD5BB7829B74A7E00094F09 /* MainTableViewComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD5BB7729B74A7E00094F09 /* MainTableViewComponents.swift */; };
@@ -30,15 +33,19 @@
 
 /* Begin PBXFileReference section */
 		6F0EB15629C3B20000297659 /* Float+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Float+Extension.swift"; sourceTree = "<group>"; };
+		6F0EB15829C3B3B700297659 /* UIDevice+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIDevice+Extension.swift"; sourceTree = "<group>"; };
+		6F2006E629C49B3200BDA8EA /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		6F2006EA29C49E5100BDA8EA /* EventKitQueryManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventKitQueryManager.swift; sourceTree = "<group>"; };
+		6F2006EC29C4A30800BDA8EA /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
+		6F2006F029C4A40100BDA8EA /* CalendarViewControllerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewControllerModel.swift; sourceTree = "<group>"; };
+		6F2006F229C4AEFA00BDA8EA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6F7D4E8D29B3C8DA00A96803 /* Counters.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Counters.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F7D4E9029B3C8DA00A96803 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6F7D4E9429B3C8DA00A96803 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
-		6F7D4E9929B3C8DB00A96803 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6F7D4E9C29B3C8DB00A96803 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6F7D4E9E29B3C8DB00A96803 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6F7D4EA429B3C9A100A96803 /* Counters.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Counters.entitlements; sourceTree = "<group>"; };
 		6F853DD129B4EE37001EF875 /* Optional+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Optional+Extension.swift"; sourceTree = "<group>"; };
-		6F853DD329B4EE93001EF875 /* MainViewControllerLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewControllerLayout.swift; sourceTree = "<group>"; };
 		6F853DD529B513B9001EF875 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		6FB43FE429BE8947001FFA0E /* Stacks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stacks.swift; sourceTree = "<group>"; };
 		6FB43FE629BF5195001FFA0E /* ComposedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComposedView.swift; sourceTree = "<group>"; };
@@ -46,7 +53,6 @@
 		6FB43FEC29BF56E3001FFA0E /* Label.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Label.swift; sourceTree = "<group>"; };
 		6FB43FEF29C0A3F5001FFA0E /* BatteriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatteriesViewController.swift; sourceTree = "<group>"; };
 		6FB43FF229C0A575001FFA0E /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
-		6FB43FF429C0AC27001FFA0E /* BatteriesViewControllerLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatteriesViewControllerLayout.swift; sourceTree = "<group>"; };
 		6FC1BCE529BA24CB00021009 /* Double+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Extension.swift"; sourceTree = "<group>"; };
 		6FD5BB7529B7445E00094F09 /* HealthKitQueryManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthKitQueryManager.swift; sourceTree = "<group>"; };
 		6FD5BB7729B74A7E00094F09 /* MainTableViewComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewComponents.swift; sourceTree = "<group>"; };
@@ -64,6 +70,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6F2006E829C49E1600BDA8EA /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				6F2006E929C49E2700BDA8EA /* Calendar */,
+				6F853DCF29B4EDEE001EF875 /* Main */,
+				6FB43FEE29C0A3D7001FFA0E /* Batteries */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		6F2006E929C49E2700BDA8EA /* Calendar */ = {
+			isa = PBXGroup;
+			children = (
+				6F2006EC29C4A30800BDA8EA /* CalendarViewController.swift */,
+				6F2006F029C4A40100BDA8EA /* CalendarViewControllerModel.swift */,
+			);
+			path = Calendar;
+			sourceTree = "<group>";
+		};
 		6F7D4E8429B3C8DA00A96803 = {
 			isa = PBXGroup;
 			children = (
@@ -83,14 +108,13 @@
 		6F7D4E8F29B3C8DA00A96803 /* Counters */ = {
 			isa = PBXGroup;
 			children = (
+				6F2006E829C49E1600BDA8EA /* Screens */,
 				6FB43FF129C0A55E001FFA0E /* TabBarController */,
-				6FB43FEE29C0A3D7001FFA0E /* Batteries */,
 				6FB43FE329BE8934001FFA0E /* Components */,
 				6F853DD029B4EDFD001EF875 /* Helpers */,
-				6F853DCF29B4EDEE001EF875 /* Main */,
 				6F7D4EA429B3C9A100A96803 /* Counters.entitlements */,
+				6F2006F229C4AEFA00BDA8EA /* Assets.xcassets */,
 				6F7D4E9029B3C8DA00A96803 /* AppDelegate.swift */,
-				6F7D4E9929B3C8DB00A96803 /* Assets.xcassets */,
 				6F7D4E9B29B3C8DB00A96803 /* LaunchScreen.storyboard */,
 				6F7D4E9E29B3C8DB00A96803 /* Info.plist */,
 			);
@@ -102,7 +126,6 @@
 			children = (
 				6FD5BB7929B778D300094F09 /* Cells */,
 				6F7D4E9429B3C8DA00A96803 /* MainViewController.swift */,
-				6F853DD329B4EE93001EF875 /* MainViewControllerLayout.swift */,
 				6FD5BB7729B74A7E00094F09 /* MainTableViewComponents.swift */,
 			);
 			path = Main;
@@ -113,6 +136,7 @@
 			children = (
 				6FD5BB7429B7441400094F09 /* Extensions */,
 				6FD5BB7529B7445E00094F09 /* HealthKitQueryManager.swift */,
+				6F2006EA29C49E5100BDA8EA /* EventKitQueryManager.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -124,6 +148,7 @@
 				6FB43FE629BF5195001FFA0E /* ComposedView.swift */,
 				6FB43FEA29BF5341001FFA0E /* ComposedCell.swift */,
 				6FB43FEC29BF56E3001FFA0E /* Label.swift */,
+				6F2006E629C49B3200BDA8EA /* ListViewController.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -132,7 +157,6 @@
 			isa = PBXGroup;
 			children = (
 				6FB43FEF29C0A3F5001FFA0E /* BatteriesViewController.swift */,
-				6FB43FF429C0AC27001FFA0E /* BatteriesViewControllerLayout.swift */,
 			);
 			path = Batteries;
 			sourceTree = "<group>";
@@ -152,6 +176,7 @@
 				6F853DD129B4EE37001EF875 /* Optional+Extension.swift */,
 				6F853DD529B513B9001EF875 /* UIView+Extension.swift */,
 				6FC1BCE529BA24CB00021009 /* Double+Extension.swift */,
+				6F0EB15829C3B3B700297659 /* UIDevice+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -222,8 +247,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6F2006F329C4AEFA00BDA8EA /* Assets.xcassets in Resources */,
 				6F7D4E9D29B3C8DB00A96803 /* LaunchScreen.storyboard in Resources */,
-				6F7D4E9A29B3C8DB00A96803 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -242,15 +267,18 @@
 				6FD5BB7629B7445E00094F09 /* HealthKitQueryManager.swift in Sources */,
 				6FB43FED29BF56E3001FFA0E /* Label.swift in Sources */,
 				6FC1BCE629BA24CB00021009 /* Double+Extension.swift in Sources */,
+				6F2006EB29C49E5100BDA8EA /* EventKitQueryManager.swift in Sources */,
 				6F0EB15729C3B20000297659 /* Float+Extension.swift in Sources */,
+				6F2006F129C4A40100BDA8EA /* CalendarViewControllerModel.swift in Sources */,
 				6F853DD229B4EE37001EF875 /* Optional+Extension.swift in Sources */,
 				6FD5BB7829B74A7E00094F09 /* MainTableViewComponents.swift in Sources */,
+				6F2006ED29C4A30800BDA8EA /* CalendarViewController.swift in Sources */,
 				6FD5BB7B29B778E700094F09 /* RegularDataCell.swift in Sources */,
 				6FB43FF029C0A3F5001FFA0E /* BatteriesViewController.swift in Sources */,
+				6F0EB15929C3B3B700297659 /* UIDevice+Extension.swift in Sources */,
 				6F7D4E9129B3C8DA00A96803 /* AppDelegate.swift in Sources */,
 				6F853DD629B513B9001EF875 /* UIView+Extension.swift in Sources */,
-				6FB43FF529C0AC27001FFA0E /* BatteriesViewControllerLayout.swift in Sources */,
-				6F853DD429B4EE93001EF875 /* MainViewControllerLayout.swift in Sources */,
+				6F2006E729C49B3200BDA8EA /* ListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -393,8 +421,10 @@
 				DEVELOPMENT_TEAM = 84N6Z39N8P;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Counters/Info.plist;
+				INFOPLIST_KEY_NSCalendarsUsageDescription = "We need access to your calendar";
 				INFOPLIST_KEY_NSHealthShareUsageDescription = "We need access to health share";
 				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "We need access to health update";
+				INFOPLIST_KEY_NSRemindersUsageDescription = "We need access to your reminders";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -424,8 +454,10 @@
 				DEVELOPMENT_TEAM = 84N6Z39N8P;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Counters/Info.plist;
+				INFOPLIST_KEY_NSCalendarsUsageDescription = "We need access to your calendar";
 				INFOPLIST_KEY_NSHealthShareUsageDescription = "We need access to health share";
 				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "We need access to health update";
+				INFOPLIST_KEY_NSRemindersUsageDescription = "We need access to your reminders";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
