@@ -9,7 +9,13 @@ import Foundation
 extension Float{
     
     var percent: Int{
-        return Int(self * 100)
+        let integerValue = Int(self * 100)
+        
+        if integerValue < 0{
+            return integerValue * (-1)
+        }
+        
+        return integerValue
     }
     
 }

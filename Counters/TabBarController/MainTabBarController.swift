@@ -18,7 +18,8 @@ class MainTabBarController: UITabBarController{
     
     let tabs: [Tab] = [
         .init(viewController: MainViewController(), title: "Saúde", image: UIImage(named: "tab.health").orEmpty),
-        .init(viewController: BatteriesViewController(), title: "Baterias", image: UIImage(named: "tab.batteries").orEmpty)
+        .init(viewController: BatteriesViewController(), title: "Baterias", image: UIImage(named: "tab.batteries").orEmpty),
+        .init(viewController: CalendarViewController(), title: "Calendário", image: UIImage(named: "tab.calendar").orEmpty)
     ]
     
     override func viewDidLoad() {

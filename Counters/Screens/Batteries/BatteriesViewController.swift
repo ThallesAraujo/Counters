@@ -10,35 +10,36 @@ import UIKit
 
 //TODO: Monitorar estado da bateria https://stackoverflow.com/questions/27475506/check-battery-level-ios-swift
 
-class BatteriesViewController: UIViewController, UITableViewDelegate, UITableViewDataSource{
-    
-    var mainList: UITableView = .init()
+//TODO: Exibir imagem do dispositivo
+
+class BatteriesViewController: ListViewController, UITableViewDelegate, UITableViewDataSource{
     
     override func viewDidLoad() {
-        setupList()
+        setupListiOS13()
         UIDevice.current.isBatteryMonitoringEnabled = true
         mainList.delegate = self
         mainList.dataSource = self
         mainList.reloadData()
+        readDeviceProperties()
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 1
     }
     
-    func setupList(){
-        if #available(iOS 13.0, *) {
-            self.mainList = .init(frame: CGRect.zero, style: .insetGrouped)
-        }
+    func readDeviceProperties(){
+        print("Modelo: \(UIDevice.modelName)")
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = UITableViewCell()
         
-        let cellContent = VStack{
+        var cellContent = VStack{
             Label("\(UIDevice.current.name)")
             Label("\(UIDevice.current.batteryLevel.percent)%")
         }
+        
+        cellContent.mainView.distribution = .fillEqually
         
         print("Device name: \(UIDevice.current.name)")
         

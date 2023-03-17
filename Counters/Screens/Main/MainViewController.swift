@@ -8,11 +8,7 @@
 import UIKit
 import HealthKit
 
-class MainViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
-    
-    //MARK: - UI Elements
-    
-    var mainList: UITableView = .init()
+class MainViewController: ListViewController, UITableViewDelegate, UITableViewDataSource {
 
     //MARK: - HealthKit
     
@@ -47,10 +43,7 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
     
     func setupList(){
-        if #available(iOS 13.0, *) {
-            self.mainList = .init(frame: CGRect.zero, style: .insetGrouped)
-        }
-        
+        setupListiOS13()
         self.mainList.register(RegularDataCell.self, forCellReuseIdentifier: regularCellDataIdentifier)
     }
     
