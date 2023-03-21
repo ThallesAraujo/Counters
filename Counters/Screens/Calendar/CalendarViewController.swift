@@ -52,7 +52,7 @@ class CalendarViewController: ListViewController, UITableViewDelegate, UITableVi
         let cell = UITableViewCell()
         let dataToDisplay = data[indexPath.row]
         
-        var cellContent = VStack{
+        let cellContent = VStack{
             Label(dataToDisplay.dataType.rawValue)
             Label("\(dataToDisplay.value)")
         }

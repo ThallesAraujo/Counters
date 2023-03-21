@@ -34,7 +34,7 @@ class BatteriesViewController: ListViewController, UITableViewDelegate, UITableV
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = UITableViewCell()
         
-        var cellContent = VStack{
+        let cellContent = VStack{
             Label("\(UIDevice.current.name)")
             Label("\(UIDevice.current.batteryLevel.percent)%")
         }

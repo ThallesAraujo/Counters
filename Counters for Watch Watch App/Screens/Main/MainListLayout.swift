@@ -1,40 +1,39 @@
 //
-//  MainTableViewComponents.swift
-//  Counters
+//  MainListLayout.swift
+//  Counters for Watch Watch App
 //
-//  Created by Thalles Araújo on 07/03/23.
+//  Created by Thalles Araújo on 21/03/23.
 //
 
 import Foundation
-
-struct MainTableViewSection{
+struct MainListSection{
     var title: String
     var unit: String
-    var dataType: DataCellType
+    var dataType: DataType
     var iconName: String
     var colorName: String
 }
 
-let mainTableViewSections = [
-    MainTableViewSection(title: "Calorias",
+let mainListSections = [
+    MainListSection(title: "Calorias",
                          unit: "Kcal",
                          dataType: .calories,
                          iconName: "calories.icon",
                         colorName: "movementColor"),
     
-    MainTableViewSection(title: "Tempo de Exercício",
+    MainListSection(title: "Tempo de Exercício",
                          unit: "",
                          dataType: .exerciseTime,
                          iconName: "exercise.time.icon",
                         colorName: "exerciseTimeColor"),
     
-    MainTableViewSection(title: "Tempo em Pé",
+    MainListSection(title: "Tempo em Pé",
                          unit: "h",
                          dataType: .standHours,
                          iconName: "stand.hour.icon",
                         colorName: "standHoursColor"),
     
-    MainTableViewSection(title: "Passos",
+    MainListSection(title: "Passos",
                          unit: "",
                          dataType: .stepCount,
                          iconName: "step.count.icon",

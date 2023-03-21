@@ -27,7 +27,7 @@ extension Optional where Wrapped == UIColor{
         case .some(let value):
             return value
         case .none:
-            return .systemBlue
+            return .blue
         }
         
     }
@@ -56,4 +56,27 @@ extension Optional where Wrapped == Int{
             return wrapped
         }
     }
+}
+
+
+extension Optional where Wrapped == Bool{
+    
+    var orTrue: Bool{
+        switch self {
+        case .none:
+            return true
+        case .some(let wrapped):
+            return wrapped
+        }
+    }
+    
+    var orFalse: Bool{
+        switch self {
+        case .none:
+            return false
+        case .some(let wrapped):
+            return wrapped
+        }
+    }
+    
 }

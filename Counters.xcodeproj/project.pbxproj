@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 53;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -19,17 +19,44 @@
 		6F7D4E9D29B3C8DB00A96803 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F7D4E9B29B3C8DB00A96803 /* LaunchScreen.storyboard */; };
 		6F853DD229B4EE37001EF875 /* Optional+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F853DD129B4EE37001EF875 /* Optional+Extension.swift */; };
 		6F853DD629B513B9001EF875 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F853DD529B513B9001EF875 /* UIView+Extension.swift */; };
+		6FAC74A229C4F5E30020A565 /* HealthDataViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FAC74A129C4F5E30020A565 /* HealthDataViewModel.swift */; };
 		6FB43FE529BE8947001FFA0E /* Stacks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FB43FE429BE8947001FFA0E /* Stacks.swift */; };
 		6FB43FE729BF5195001FFA0E /* ComposedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FB43FE629BF5195001FFA0E /* ComposedView.swift */; };
 		6FB43FEB29BF5341001FFA0E /* ComposedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FB43FEA29BF5341001FFA0E /* ComposedCell.swift */; };
 		6FB43FED29BF56E3001FFA0E /* Label.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FB43FEC29BF56E3001FFA0E /* Label.swift */; };
 		6FB43FF029C0A3F5001FFA0E /* BatteriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FB43FEF29C0A3F5001FFA0E /* BatteriesViewController.swift */; };
 		6FB43FF329C0A575001FFA0E /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FB43FF229C0A575001FFA0E /* MainTabBarController.swift */; };
+		6FBEDC1429C9C62900B474B0 /* MainListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FBEDC1329C9C62900B474B0 /* MainListCell.swift */; };
+		6FBEDC1629C9C75800B474B0 /* MainListLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FBEDC1529C9C75800B474B0 /* MainListLayout.swift */; };
+		6FBEDC1729C9C99800B474B0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6F2006F229C4AEFA00BDA8EA /* Assets.xcassets */; };
 		6FC1BCE629BA24CB00021009 /* Double+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FC1BCE529BA24CB00021009 /* Double+Extension.swift */; };
 		6FD5BB7629B7445E00094F09 /* HealthKitQueryManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD5BB7529B7445E00094F09 /* HealthKitQueryManager.swift */; };
 		6FD5BB7829B74A7E00094F09 /* MainTableViewComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD5BB7729B74A7E00094F09 /* MainTableViewComponents.swift */; };
 		6FD5BB7B29B778E700094F09 /* RegularDataCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD5BB7A29B778E700094F09 /* RegularDataCell.swift */; };
+		6FE3A26D29C543A1000746B2 /* Counters_for_WatchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FE3A26C29C543A1000746B2 /* Counters_for_WatchApp.swift */; };
+		6FE3A26F29C543A1000746B2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FE3A26E29C543A1000746B2 /* ContentView.swift */; };
+		6FE3A27429C543A2000746B2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6FE3A27329C543A2000746B2 /* Preview Assets.xcassets */; };
+		6FE3A27B29C54556000746B2 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FE3A27A29C54556000746B2 /* MainView.swift */; };
+		6FE3A27E29C545A6000746B2 /* HealthDataViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FE3A27D29C545A6000746B2 /* HealthDataViewModel.swift */; };
+		6FE3A27F29C545B2000746B2 /* EventKitQueryManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F2006EA29C49E5100BDA8EA /* EventKitQueryManager.swift */; };
+		6FE3A28029C545B2000746B2 /* HealthKitQueryManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD5BB7529B7445E00094F09 /* HealthKitQueryManager.swift */; };
+		6FE3A28129C545B6000746B2 /* Float+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F0EB15629C3B20000297659 /* Float+Extension.swift */; };
+		6FE3A28229C545B8000746B2 /* Optional+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F853DD129B4EE37001EF875 /* Optional+Extension.swift */; };
+		6FE3A28329C545BB000746B2 /* Double+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FC1BCE529BA24CB00021009 /* Double+Extension.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		6F343F0A29C5046900127473 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 8;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		6F0EB15629C3B20000297659 /* Float+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Float+Extension.swift"; sourceTree = "<group>"; };
@@ -39,6 +66,9 @@
 		6F2006EC29C4A30800BDA8EA /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
 		6F2006F029C4A40100BDA8EA /* CalendarViewControllerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewControllerModel.swift; sourceTree = "<group>"; };
 		6F2006F229C4AEFA00BDA8EA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6F343EEB29C5046700127473 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		6F343EED29C5046800127473 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6F343EEF29C5046800127473 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6F7D4E8D29B3C8DA00A96803 /* Counters.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Counters.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F7D4E9029B3C8DA00A96803 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6F7D4E9429B3C8DA00A96803 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -47,20 +77,39 @@
 		6F7D4EA429B3C9A100A96803 /* Counters.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Counters.entitlements; sourceTree = "<group>"; };
 		6F853DD129B4EE37001EF875 /* Optional+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Optional+Extension.swift"; sourceTree = "<group>"; };
 		6F853DD529B513B9001EF875 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		6FAC74A129C4F5E30020A565 /* HealthDataViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthDataViewModel.swift; sourceTree = "<group>"; };
 		6FB43FE429BE8947001FFA0E /* Stacks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stacks.swift; sourceTree = "<group>"; };
 		6FB43FE629BF5195001FFA0E /* ComposedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComposedView.swift; sourceTree = "<group>"; };
 		6FB43FEA29BF5341001FFA0E /* ComposedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComposedCell.swift; sourceTree = "<group>"; };
 		6FB43FEC29BF56E3001FFA0E /* Label.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Label.swift; sourceTree = "<group>"; };
 		6FB43FEF29C0A3F5001FFA0E /* BatteriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatteriesViewController.swift; sourceTree = "<group>"; };
 		6FB43FF229C0A575001FFA0E /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		6FBEDC1329C9C62900B474B0 /* MainListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainListCell.swift; sourceTree = "<group>"; };
+		6FBEDC1529C9C75800B474B0 /* MainListLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainListLayout.swift; sourceTree = "<group>"; };
 		6FC1BCE529BA24CB00021009 /* Double+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Extension.swift"; sourceTree = "<group>"; };
 		6FD5BB7529B7445E00094F09 /* HealthKitQueryManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthKitQueryManager.swift; sourceTree = "<group>"; };
 		6FD5BB7729B74A7E00094F09 /* MainTableViewComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewComponents.swift; sourceTree = "<group>"; };
 		6FD5BB7A29B778E700094F09 /* RegularDataCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegularDataCell.swift; sourceTree = "<group>"; };
+		6FE3A26A29C543A1000746B2 /* Counters for Watch Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Counters for Watch Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6FE3A26C29C543A1000746B2 /* Counters_for_WatchApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Counters_for_WatchApp.swift; sourceTree = "<group>"; };
+		6FE3A26E29C543A1000746B2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		6FE3A27029C543A2000746B2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6FE3A27329C543A2000746B2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		6FE3A27A29C54556000746B2 /* MainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		6FE3A27D29C545A6000746B2 /* HealthDataViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthDataViewModel.swift; sourceTree = "<group>"; };
+		6FE3A28429C545E5000746B2 /* Counters-for-Watch-Watch-App-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Counters-for-Watch-Watch-App-Info.plist"; sourceTree = SOURCE_ROOT; };
+		6FE3A28529C54650000746B2 /* Counters for Watch Watch App.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Counters for Watch Watch App.entitlements"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		6F7D4E8A29B3C8DA00A96803 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6FE3A26729C543A1000746B2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -89,10 +138,22 @@
 			path = Calendar;
 			sourceTree = "<group>";
 		};
+		6F343EE929C5046700127473 /* Counters For Watch */ = {
+			isa = PBXGroup;
+			children = (
+				6F343EEA29C5046700127473 /* Interface.storyboard */,
+				6F343EED29C5046800127473 /* Assets.xcassets */,
+				6F343EEF29C5046800127473 /* Info.plist */,
+			);
+			path = "Counters For Watch";
+			sourceTree = "<group>";
+		};
 		6F7D4E8429B3C8DA00A96803 = {
 			isa = PBXGroup;
 			children = (
 				6F7D4E8F29B3C8DA00A96803 /* Counters */,
+				6F343EE929C5046700127473 /* Counters For Watch */,
+				6FE3A26B29C543A1000746B2 /* Counters for Watch Watch App */,
 				6F7D4E8E29B3C8DA00A96803 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -101,6 +162,7 @@
 			isa = PBXGroup;
 			children = (
 				6F7D4E8D29B3C8DA00A96803 /* Counters.app */,
+				6FE3A26A29C543A1000746B2 /* Counters for Watch Watch App.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -124,6 +186,7 @@
 		6F853DCF29B4EDEE001EF875 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				6FAC74A029C4F5CF0020A565 /* ViewModel */,
 				6FD5BB7929B778D300094F09 /* Cells */,
 				6F7D4E9429B3C8DA00A96803 /* MainViewController.swift */,
 				6FD5BB7729B74A7E00094F09 /* MainTableViewComponents.swift */,
@@ -139,6 +202,14 @@
 				6F2006EA29C49E5100BDA8EA /* EventKitQueryManager.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		6FAC74A029C4F5CF0020A565 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				6FAC74A129C4F5E30020A565 /* HealthDataViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		6FB43FE329BE8934001FFA0E /* Components */ = {
@@ -169,6 +240,14 @@
 			path = TabBarController;
 			sourceTree = "<group>";
 		};
+		6FBEDC1229C9C61600B474B0 /* ListCell */ = {
+			isa = PBXGroup;
+			children = (
+				6FBEDC1329C9C62900B474B0 /* MainListCell.swift */,
+			);
+			path = ListCell;
+			sourceTree = "<group>";
+		};
 		6FD5BB7429B7441400094F09 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
@@ -189,6 +268,55 @@
 			path = Cells;
 			sourceTree = "<group>";
 		};
+		6FE3A26B29C543A1000746B2 /* Counters for Watch Watch App */ = {
+			isa = PBXGroup;
+			children = (
+				6FE3A28529C54650000746B2 /* Counters for Watch Watch App.entitlements */,
+				6FE3A28429C545E5000746B2 /* Counters-for-Watch-Watch-App-Info.plist */,
+				6FE3A27829C5453F000746B2 /* Screens */,
+				6FE3A26C29C543A1000746B2 /* Counters_for_WatchApp.swift */,
+				6FE3A26E29C543A1000746B2 /* ContentView.swift */,
+				6FE3A27029C543A2000746B2 /* Assets.xcassets */,
+				6FE3A27229C543A2000746B2 /* Preview Content */,
+			);
+			path = "Counters for Watch Watch App";
+			sourceTree = "<group>";
+		};
+		6FE3A27229C543A2000746B2 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				6FE3A27329C543A2000746B2 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		6FE3A27829C5453F000746B2 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				6FE3A27929C5454C000746B2 /* Main */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		6FE3A27929C5454C000746B2 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				6FBEDC1229C9C61600B474B0 /* ListCell */,
+				6FE3A27C29C5455D000746B2 /* ViewModel */,
+				6FE3A27A29C54556000746B2 /* MainView.swift */,
+				6FBEDC1529C9C75800B474B0 /* MainListLayout.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		6FE3A27C29C5455D000746B2 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				6FE3A27D29C545A6000746B2 /* HealthDataViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -199,6 +327,7 @@
 				6F7D4E8929B3C8DA00A96803 /* Sources */,
 				6F7D4E8A29B3C8DA00A96803 /* Frameworks */,
 				6F7D4E8B29B3C8DA00A96803 /* Resources */,
+				6F343F0A29C5046900127473 /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
@@ -207,6 +336,23 @@
 			name = Counters;
 			productName = Counters;
 			productReference = 6F7D4E8D29B3C8DA00A96803 /* Counters.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6FE3A26929C543A1000746B2 /* Counters for Watch Watch App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6FE3A27529C543A2000746B2 /* Build configuration list for PBXNativeTarget "Counters for Watch Watch App" */;
+			buildPhases = (
+				6FE3A26629C543A1000746B2 /* Sources */,
+				6FE3A26729C543A1000746B2 /* Frameworks */,
+				6FE3A26829C543A1000746B2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Counters for Watch Watch App";
+			productName = "Counters for Watch Watch App";
+			productReference = 6FE3A26A29C543A1000746B2 /* Counters for Watch Watch App.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -222,10 +368,13 @@
 					6F7D4E8C29B3C8DA00A96803 = {
 						CreatedOnToolsVersion = 14.2;
 					};
+					6FE3A26929C543A1000746B2 = {
+						CreatedOnToolsVersion = 14.2;
+					};
 				};
 			};
 			buildConfigurationList = 6F7D4E8829B3C8DA00A96803 /* Build configuration list for PBXProject "Counters" */;
-			compatibilityVersion = "Xcode 14.0";
+			compatibilityVersion = "Xcode 11.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -238,6 +387,7 @@
 			projectRoot = "";
 			targets = (
 				6F7D4E8C29B3C8DA00A96803 /* Counters */,
+				6FE3A26929C543A1000746B2 /* Counters for Watch Watch App */,
 			);
 		};
 /* End PBXProject section */
@@ -252,6 +402,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		6FE3A26829C543A1000746B2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6FE3A27429C543A2000746B2 /* Preview Assets.xcassets in Resources */,
+				6FBEDC1729C9C99800B474B0 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -262,6 +421,7 @@
 				6FB43FE529BE8947001FFA0E /* Stacks.swift in Sources */,
 				6FB43FE729BF5195001FFA0E /* ComposedView.swift in Sources */,
 				6FB43FF329C0A575001FFA0E /* MainTabBarController.swift in Sources */,
+				6FAC74A229C4F5E30020A565 /* HealthDataViewModel.swift in Sources */,
 				6F7D4E9529B3C8DA00A96803 /* MainViewController.swift in Sources */,
 				6FB43FEB29BF5341001FFA0E /* ComposedCell.swift in Sources */,
 				6FD5BB7629B7445E00094F09 /* HealthKitQueryManager.swift in Sources */,
@@ -282,9 +442,35 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		6FE3A26629C543A1000746B2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6FE3A27E29C545A6000746B2 /* HealthDataViewModel.swift in Sources */,
+				6FBEDC1629C9C75800B474B0 /* MainListLayout.swift in Sources */,
+				6FE3A28229C545B8000746B2 /* Optional+Extension.swift in Sources */,
+				6FE3A28329C545BB000746B2 /* Double+Extension.swift in Sources */,
+				6FE3A28029C545B2000746B2 /* HealthKitQueryManager.swift in Sources */,
+				6FBEDC1429C9C62900B474B0 /* MainListCell.swift in Sources */,
+				6FE3A26F29C543A1000746B2 /* ContentView.swift in Sources */,
+				6FE3A27B29C54556000746B2 /* MainView.swift in Sources */,
+				6FE3A27F29C545B2000746B2 /* EventKitQueryManager.swift in Sources */,
+				6FE3A28129C545B6000746B2 /* Float+Extension.swift in Sources */,
+				6FE3A26D29C543A1000746B2 /* Counters_for_WatchApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		6F343EEA29C5046700127473 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6F343EEB29C5046700127473 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
 		6F7D4E9B29B3C8DB00A96803 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -418,7 +604,7 @@
 				CODE_SIGN_ENTITLEMENTS = Counters/Counters.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 84N6Z39N8P;
+				DEVELOPMENT_TEAM = TQ452L5YSH;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Counters/Info.plist;
 				INFOPLIST_KEY_NSCalendarsUsageDescription = "We need access to your calendar";
@@ -435,7 +621,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.thalles.test.Counters;
+				PRODUCT_BUNDLE_IDENTIFIER = com.thalles.teste.Counters;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -451,7 +637,7 @@
 				CODE_SIGN_ENTITLEMENTS = Counters/Counters.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 84N6Z39N8P;
+				DEVELOPMENT_TEAM = TQ452L5YSH;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Counters/Info.plist;
 				INFOPLIST_KEY_NSCalendarsUsageDescription = "We need access to your calendar";
@@ -468,11 +654,77 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.thalles.test.Counters;
+				PRODUCT_BUNDLE_IDENTIFIER = com.thalles.teste.Counters;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		6FE3A27629C543A2000746B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Counters for Watch Watch App/Counters for Watch Watch App.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Counters for Watch Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = TQ452L5YSH;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Counters-for-Watch-Watch-App-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Counters for Watch";
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "We need access to health share";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = .CountersForWatch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 9.1;
+			};
+			name = Debug;
+		};
+		6FE3A27729C543A2000746B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Counters for Watch Watch App/Counters for Watch Watch App.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Counters for Watch Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = TQ452L5YSH;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Counters-for-Watch-Watch-App-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Counters for Watch";
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "We need access to health share";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = .CountersForWatch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 9.1;
 			};
 			name = Release;
 		};
@@ -493,6 +745,15 @@
 			buildConfigurations = (
 				6F7D4EA229B3C8DB00A96803 /* Debug */,
 				6F7D4EA329B3C8DB00A96803 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6FE3A27529C543A2000746B2 /* Build configuration list for PBXNativeTarget "Counters for Watch Watch App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6FE3A27629C543A2000746B2 /* Debug */,
+				6FE3A27729C543A2000746B2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

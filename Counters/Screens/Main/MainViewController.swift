@@ -9,31 +9,20 @@ import UIKit
 import HealthKit
 
 class MainViewController: ListViewController, UITableViewDelegate, UITableViewDataSource {
-
-    //MARK: - HealthKit
     
-    var queryManager = HealthKitQueryManager()
-    
-    //MARK: - Data
-    
-    var healthData: [String: String] = [
-        "calories": "0",
-        "exerciseTime": "0",
-        "standHours": "0",
-        "stepCount": "0"
-    ]{
-        didSet {
-            self.mainList.reloadData()
-        }
-    }
+    var viewModel: HealthDataViewModel?
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        queryManager.getCaloriesType()
+        
+        viewModel = .init({
+            self.mainList.reloadData()
+        })
+        
         setupList()
         mainList.delegate = self
         mainList.dataSource = self
-        queryHealthKit()
+        viewModel?.getHealthData()
     }
     
     override func viewDidLayoutSubviews() {
@@ -47,29 +36,6 @@ class MainViewController: ListViewController, UITableViewDelegate, UITableViewDa
         self.mainList.register(RegularDataCell.self, forCellReuseIdentifier: regularCellDataIdentifier)
     }
     
-    func queryHealthKit(){
-        
-        let queries = [
-            (self.queryManager.getActiveEnergy, DataCellType.calories),
-            (self.queryManager.getExerciseTime, DataCellType.exerciseTime),
-            (self.queryManager.getStandHour, DataCellType.standHours),
-            (self.queryManager.getStepCount, DataCellType.stepCount)
-        ]
-        
-        for (query, dataType) in queries{
-            query { data in
-                
-                print("Data: \(dataType): \(data)")
-                
-                if [DataCellType.exerciseTime].contains(dataType){
-                    self.healthData[dataType.rawValue] = "\(data.asString(style: .abbreviated))"
-                }else{
-                    self.healthData[dataType.rawValue] = "\(Int(data))"
-                }
-            }
-        }
-        
-    }
     
     //MARK: - TableView
     
@@ -79,7 +45,9 @@ class MainViewController: ListViewController, UITableViewDelegate, UITableViewDa
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        if !healthData.isEmpty{
+        
+        if let healthData = viewModel?.healthData, !(healthData.isEmpty){
+            
             if let cell = tableView.dequeueReusableCell(withIdentifier: regularCellDataIdentifier) as? RegularDataCell, indexPath.item < healthData.count{
                 let section = mainTableViewSections[indexPath.item]
                 
