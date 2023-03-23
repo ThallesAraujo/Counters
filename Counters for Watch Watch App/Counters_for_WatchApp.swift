@@ -11,7 +11,11 @@ import SwiftUI
 struct Counters_for_Watch_Watch_AppApp: App {
     var body: some Scene {
         WindowGroup {
-            MainView()
+            TabView{
+                MainView()
+                BatteriesView()
+                CalendarView()
+            }.tabViewStyle(.page)
         }
     }
 }

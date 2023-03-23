@@ -30,7 +30,6 @@ class HealthDataViewModel: ObservableObject{
     
     
     init(){
-        //Importante: detectar o iOS é 14+
         self.queryManager.getCaloriesType()
     }
     
