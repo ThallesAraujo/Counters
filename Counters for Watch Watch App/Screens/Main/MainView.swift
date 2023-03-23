@@ -8,7 +8,7 @@
 import SwiftUI
 struct MainView: View {
     
-    @State var viewModel: HealthDataViewModel = .init()
+    @StateObject var viewModel: HealthDataViewModel = .init()
     
     var body: some View {
         List{

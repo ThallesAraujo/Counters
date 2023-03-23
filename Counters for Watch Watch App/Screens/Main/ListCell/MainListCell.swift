@@ -17,7 +17,7 @@ struct MainViewCell: View{
         HStack{
             VStack(alignment: .leading){
                 Text(listSection.title).foregroundColor(Color(listSection.colorName))
-                Text(value)
+                Text("\(value)\(listSection.unit)")
             }
             Spacer()
             Image(listSection.iconName).foregroundColor(Color(listSection.colorName))
