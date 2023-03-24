@@ -14,11 +14,15 @@ class RegularDataCell: UITableViewCell{
     
     override var reuseIdentifier: String { return regularCellDataIdentifier }
     
-    var view: UIView = .init()
+    var view: UIView = .init(){
+        willSet{
+            view.removeFromSuperview()
+            addSubview(newValue)
+        }
+    }
     
     override func draw(_ rect: CGRect) {
         super.draw(rect)
-        addSubview(view)
         view.fillParent(withPadding: 16)
         self.layoutIfNeeded()
         

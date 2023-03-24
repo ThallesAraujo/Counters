@@ -49,9 +49,10 @@ class MainViewController: ListViewController, UITableViewDelegate, UITableViewDa
         if let healthData = viewModel?.healthData, !(healthData.isEmpty){
             
             if let cell = tableView.dequeueReusableCell(withIdentifier: regularCellDataIdentifier) as? RegularDataCell, indexPath.item < healthData.count{
+                
                 let section = mainTableViewSections[indexPath.item]
                 
-                var dataColor = UIColor(named: section.colorName).orDefault
+                let dataColor = UIColor(named: section.colorName).orDefault
                 
                 cell.view = VStack(padding: 0){
                     HStack(padding: 0){
@@ -62,6 +63,8 @@ class MainViewController: ListViewController, UITableViewDelegate, UITableViewDa
                     }
                     Label("\(healthData[section.dataType.rawValue].orEmpty)\(section.unit)")
                 }
+                
+                cell.draw(cell.frame)
                 
                 return cell
             }
