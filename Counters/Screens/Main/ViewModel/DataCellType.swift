@@ -6,3 +6,11 @@
 //
 
 import Foundation
+enum DataCellType: String{
+    
+    case calories = "calories"
+    case standHours = "standHours"
+    case exerciseTime = "exerciseTime"
+    case stepCount = "stepCount"
+    
+}

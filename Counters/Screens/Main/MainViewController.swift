@@ -51,10 +51,18 @@ class MainViewController: ListViewController, UITableViewDelegate, UITableViewDa
             if let cell = tableView.dequeueReusableCell(withIdentifier: regularCellDataIdentifier) as? RegularDataCell, indexPath.item < healthData.count{
                 let section = mainTableViewSections[indexPath.item]
                 
-                cell.title.text = section.title
-                cell.data.text = "\(healthData[section.dataType.rawValue].orEmpty)\(section.unit)"
-                cell.icon.image = UIImage(named: section.iconName)
-                cell.dataColor = UIColor(named: section.colorName).orDefault
+                var dataColor = UIColor(named: section.colorName).orDefault
+                
+                cell.view = VStack(padding: 0){
+                    HStack(padding: 0){
+                        Image(name: section.iconName).tintColor(dataColor)
+                        HStack(horizontalPadding: 4){
+                            Label(section.title).textColor(dataColor)
+                        }
+                    }
+                    Label("\(healthData[section.dataType.rawValue].orEmpty)\(section.unit)")
+                }
+                
                 return cell
             }
         }
