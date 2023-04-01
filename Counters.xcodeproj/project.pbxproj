@@ -14,6 +14,8 @@
 		6F2006ED29C4A30800BDA8EA /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F2006EC29C4A30800BDA8EA /* CalendarViewController.swift */; };
 		6F2006F129C4A40100BDA8EA /* CalendarViewControllerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F2006F029C4A40100BDA8EA /* CalendarViewControllerModel.swift */; };
 		6F2006F329C4AEFA00BDA8EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6F2006F229C4AEFA00BDA8EA /* Assets.xcassets */; };
+		6F390A0529D8350A008FC3DB /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F390A0429D8350A008FC3DB /* ListView.swift */; };
+		6F390A0729D83BC2008FC3DB /* HealthData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F390A0629D83BC2008FC3DB /* HealthData.swift */; };
 		6F66F6F729CC8B680057A1CE /* BatteriesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F66F6F629CC8B680057A1CE /* BatteriesView.swift */; };
 		6F66F6FA29CC916C0057A1CE /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F66F6F929CC916C0057A1CE /* CalendarView.swift */; };
 		6F66F6FD29CC91EE0057A1CE /* CalendarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F66F6FC29CC91EE0057A1CE /* CalendarViewModel.swift */; };
@@ -71,6 +73,8 @@
 		6F343EEB29C5046700127473 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
 		6F343EED29C5046800127473 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6F343EEF29C5046800127473 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6F390A0429D8350A008FC3DB /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
+		6F390A0629D83BC2008FC3DB /* HealthData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthData.swift; sourceTree = "<group>"; };
 		6F66F6F629CC8B680057A1CE /* BatteriesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatteriesView.swift; sourceTree = "<group>"; };
 		6F66F6F929CC916C0057A1CE /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
 		6F66F6FC29CC91EE0057A1CE /* CalendarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewModel.swift; sourceTree = "<group>"; };
@@ -238,6 +242,7 @@
 			children = (
 				6FAC74A129C4F5E30020A565 /* HealthDataViewModel.swift */,
 				6F66F70729CD36840057A1CE /* DataCellType.swift */,
+				6F390A0629D83BC2008FC3DB /* HealthData.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -249,6 +254,7 @@
 				6FB43FEC29BF56E3001FFA0E /* Label.swift */,
 				6F2006E629C49B3200BDA8EA /* ListViewController.swift */,
 				6F66F70229CD34040057A1CE /* Image.swift */,
+				6F390A0429D8350A008FC3DB /* ListView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -454,8 +460,10 @@
 				6F7D4E9529B3C8DA00A96803 /* MainViewController.swift in Sources */,
 				6FD5BB7629B7445E00094F09 /* HealthKitQueryManager.swift in Sources */,
 				6F66F70829CD36840057A1CE /* DataCellType.swift in Sources */,
+				6F390A0729D83BC2008FC3DB /* HealthData.swift in Sources */,
 				6FB43FED29BF56E3001FFA0E /* Label.swift in Sources */,
 				6FC1BCE629BA24CB00021009 /* Double+Extension.swift in Sources */,
+				6F390A0529D8350A008FC3DB /* ListView.swift in Sources */,
 				6F2006EB29C49E5100BDA8EA /* EventKitQueryManager.swift in Sources */,
 				6F0EB15729C3B20000297659 /* Float+Extension.swift in Sources */,
 				6F66F70329CD34040057A1CE /* Image.swift in Sources */,

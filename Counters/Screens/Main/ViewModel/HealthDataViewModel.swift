@@ -12,11 +12,11 @@ class HealthDataViewModel{
     var dataDidChangeClosure: () -> Void = {}
     var queryManager = HealthKitQueryManager()
     
-    var healthData: [String: String] = [
-        "calories": "0",
-        "exerciseTime": "0",
-        "standHours": "0",
-        "stepCount": "0"
+    var healthData: [HealthData] = [
+        .init(type: .calories, data: "0"),
+        .init(type: .exerciseTime, data: "0"),
+        .init(type: .standHours, data: "0"),
+        .init(type: .stepCount, data: "0")
     ]{
         didSet {
             self.dataDidChangeClosure()
@@ -43,10 +43,12 @@ class HealthDataViewModel{
                 
                 print("Data: \(dataType): \(data)")
                 
+                let dataIndex = self.healthData.firstIndex(where: {$0.type == dataType}).orZero
+                
                 if [DataCellType.exerciseTime].contains(dataType){
-                    self.healthData[dataType.rawValue] = "\(data.asString(style: .abbreviated))"
+                    self.healthData[dataIndex].data = "\(data.asString(style: .abbreviated))"
                 }else{
-                    self.healthData[dataType.rawValue] = "\(Int(data))"
+                    self.healthData[dataIndex].data = "\(Int(data))"
                 }
             }
         }
