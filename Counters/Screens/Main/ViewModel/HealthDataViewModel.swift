@@ -26,7 +26,6 @@ class HealthDataViewModel{
     
     init(_ dataDidChangeClosure: @escaping () -> Void){
         self.dataDidChangeClosure = dataDidChangeClosure
-        //Importante: detectar o iOS é 14+
         self.queryManager.getCaloriesType()
     }
     

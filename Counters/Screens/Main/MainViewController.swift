@@ -21,8 +21,6 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
             }
         })
         
-        //mainList.delegate = self
-        //mainList.dataSource = self
         viewModel?.getHealthData()
         setupList()
         
@@ -35,8 +33,6 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
             ls.translatesAutoresizingMaskIntoConstraints = false
             ls.fillParent(withPadding: 0)
         }
-        //TODO: Por hora, corrige cores em células erradas. Porém não é a melhor solução
-        //self.mainList.reloadData()
     }
     
     func setupList(){
@@ -56,8 +52,6 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
                 }
             }))
         
-//        setupListiOS13()
-//        self.mainList.register(RegularDataCell.self, forCellReuseIdentifier: regularCellDataIdentifier)
     }
     
     func getSection(_ indexPath: IndexPath) -> MainTableViewSection{
