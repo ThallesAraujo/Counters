@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 53;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -31,6 +31,8 @@
 		6FB43FED29BF56E3001FFA0E /* Label.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FB43FEC29BF56E3001FFA0E /* Label.swift */; };
 		6FB43FF029C0A3F5001FFA0E /* BatteriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FB43FEF29C0A3F5001FFA0E /* BatteriesViewController.swift */; };
 		6FB43FF329C0A575001FFA0E /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FB43FF229C0A575001FFA0E /* MainTabBarController.swift */; };
+		6FBE68C22A9BD1110048B4F5 /* MainViewOSTen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FBE68C12A9BD1110048B4F5 /* MainViewOSTen.swift */; };
+		6FBE68C52A9BD12C0048B4F5 /* DetailsViewOSTen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FBE68C42A9BD12C0048B4F5 /* DetailsViewOSTen.swift */; };
 		6FBEDC1429C9C62900B474B0 /* MainListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FBEDC1329C9C62900B474B0 /* MainListCell.swift */; };
 		6FBEDC1629C9C75800B474B0 /* MainListLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FBEDC1529C9C75800B474B0 /* MainListLayout.swift */; };
 		6FBEDC1729C9C99800B474B0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6F2006F229C4AEFA00BDA8EA /* Assets.xcassets */; };
@@ -93,6 +95,8 @@
 		6FB43FEC29BF56E3001FFA0E /* Label.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Label.swift; sourceTree = "<group>"; };
 		6FB43FEF29C0A3F5001FFA0E /* BatteriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatteriesViewController.swift; sourceTree = "<group>"; };
 		6FB43FF229C0A575001FFA0E /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		6FBE68C12A9BD1110048B4F5 /* MainViewOSTen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewOSTen.swift; sourceTree = "<group>"; };
+		6FBE68C42A9BD12C0048B4F5 /* DetailsViewOSTen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewOSTen.swift; sourceTree = "<group>"; };
 		6FBEDC1329C9C62900B474B0 /* MainListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainListCell.swift; sourceTree = "<group>"; };
 		6FBEDC1529C9C75800B474B0 /* MainListLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainListLayout.swift; sourceTree = "<group>"; };
 		6FC1BCE529BA24CB00021009 /* Double+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Extension.swift"; sourceTree = "<group>"; };
@@ -167,6 +171,7 @@
 		6F66F6F829CC91570057A1CE /* Calendar */ = {
 			isa = PBXGroup;
 			children = (
+				6FBE68BF2A9BD0D70048B4F5 /* OS10 */,
 				6F66F6FB29CC91DC0057A1CE /* ViewModel */,
 				6F66F6F929CC916C0057A1CE /* CalendarView.swift */,
 			);
@@ -275,6 +280,30 @@
 			path = TabBarController;
 			sourceTree = "<group>";
 		};
+		6FBE68BF2A9BD0D70048B4F5 /* OS10 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = OS10;
+			sourceTree = "<group>";
+		};
+		6FBE68C02A9BD0F50048B4F5 /* OS10 */ = {
+			isa = PBXGroup;
+			children = (
+				6FBE68C32A9BD11D0048B4F5 /* Subviews */,
+				6FBE68C12A9BD1110048B4F5 /* MainViewOSTen.swift */,
+			);
+			path = OS10;
+			sourceTree = "<group>";
+		};
+		6FBE68C32A9BD11D0048B4F5 /* Subviews */ = {
+			isa = PBXGroup;
+			children = (
+				6FBE68C42A9BD12C0048B4F5 /* DetailsViewOSTen.swift */,
+			);
+			path = Subviews;
+			sourceTree = "<group>";
+		};
 		6FBEDC1229C9C61600B474B0 /* ListCell */ = {
 			isa = PBXGroup;
 			children = (
@@ -337,6 +366,7 @@
 		6FE3A27929C5454C000746B2 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				6FBE68C02A9BD0F50048B4F5 /* OS10 */,
 				6FBEDC1229C9C61600B474B0 /* ListCell */,
 				6FE3A27C29C5455D000746B2 /* ViewModel */,
 				6FE3A27A29C54556000746B2 /* MainView.swift */,
@@ -491,10 +521,12 @@
 				6FE3A28229C545B8000746B2 /* Optional+Extension.swift in Sources */,
 				6FE3A28329C545BB000746B2 /* Double+Extension.swift in Sources */,
 				6FE3A28029C545B2000746B2 /* HealthKitQueryManager.swift in Sources */,
+				6FBE68C52A9BD12C0048B4F5 /* DetailsViewOSTen.swift in Sources */,
 				6F66F6F729CC8B680057A1CE /* BatteriesView.swift in Sources */,
 				6FBEDC1429C9C62900B474B0 /* MainListCell.swift in Sources */,
 				6FE3A27B29C54556000746B2 /* MainView.swift in Sources */,
 				6FE3A27F29C545B2000746B2 /* EventKitQueryManager.swift in Sources */,
+				6FBE68C22A9BD1110048B4F5 /* MainViewOSTen.swift in Sources */,
 				6FE3A28129C545B6000746B2 /* Float+Extension.swift in Sources */,
 				6FE3A26D29C543A1000746B2 /* Counters_for_WatchApp.swift in Sources */,
 			);

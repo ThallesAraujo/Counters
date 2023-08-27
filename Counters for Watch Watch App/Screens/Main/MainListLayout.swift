@@ -6,7 +6,7 @@
 //
 
 import Foundation
-struct MainListSection{
+struct MainListSection: Hashable{
     var title: String
     var unit: String
     var dataType: DataType

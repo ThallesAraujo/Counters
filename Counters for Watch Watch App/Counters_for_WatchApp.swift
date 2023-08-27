@@ -11,11 +11,17 @@ import SwiftUI
 struct Counters_for_Watch_Watch_AppApp: App {
     var body: some Scene {
         WindowGroup {
-            TabView{
-                MainView()
-                BatteriesView()
-                CalendarView()
-            }.tabViewStyle(.page)
+            if #available(watchOS 10, *){
+                NavigationStack{
+                    MainViewOSTen()
+                }
+            }else{
+                TabView{
+                    MainView()
+                    BatteriesView()
+                    CalendarView()
+                }.tabViewStyle(.page)
+            }
         }
     }
 }
