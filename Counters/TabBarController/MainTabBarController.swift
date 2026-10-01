@@ -16,7 +16,7 @@ struct Tab{
 
 class MainTabBarController: UITabBarController{
     
-    let tabs: [Tab] = [
+    let vcTabs: [Tab] = [
         .init(viewController: MainViewController(), title: "Saúde", image: UIImage(named: "tab.health").orEmpty),
         .init(viewController: BatteriesViewController(), title: "Baterias", image: UIImage(named: "tab.batteries").orEmpty),
         .init(viewController: CalendarViewController(), title: "Calendário", image: UIImage(named: "tab.calendar").orEmpty)
@@ -28,7 +28,7 @@ class MainTabBarController: UITabBarController{
     }
     
     func setupVCs() {
-        viewControllers = tabs.compactMap({createNavController(tab: $0)})
+        viewControllers = vcTabs.compactMap({createNavController(tab: $0)})
     }
     
     fileprivate func createNavController(tab: Tab) -> UIViewController {

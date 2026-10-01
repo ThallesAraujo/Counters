@@ -194,38 +194,6 @@
             endingLineNumber = "42"
             landmarkName = "setupList()"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "17CA4822-B924-469A-81FA-ED7F02272675 - 5db2705c4d9b9f3b"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Counters.MainViewController.setupList() -&gt; ()"
-                  moduleName = "Counters"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/thallesaraujo/Developer/Counters/Counters/Screens/Main/MainViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "41"
-                  endingLineNumber = "41"
-                  offsetFromSymbolStart = "232">
-               </Location>
-               <Location
-                  uuid = "17CA4822-B924-469A-81FA-ED7F02272675 - 3ea99e99c0a68f1c"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Any, Foundation.IndexPath) -&gt; __C.UIView in Counters.MainViewController.setupList() -&gt; ()"
-                  moduleName = "Counters"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/thallesaraujo/Developer/Counters/Counters/Screens/Main/MainViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "42"
-                  endingLineNumber = "42"
-                  offsetFromSymbolStart = "128">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

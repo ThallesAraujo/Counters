@@ -46,7 +46,6 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "6FE3A26929C543A1000746B2"
             BuildableName = "Counters for Watch Watch App.app"
-            BlueprintName = "Counters for Watch Watch App"
             ReferencedContainer = "container:Counters.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -63,7 +62,6 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "6FE3A26929C543A1000746B2"
             BuildableName = "Counters for Watch Watch App.app"
-            BlueprintName = "Counters for Watch Watch App"
             ReferencedContainer = "container:Counters.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
